@@ -35,12 +35,19 @@
         color: white;
         text-align: center;
       }
-      /* left */
+      /* background */
       .left {
         background: hsla(180, 100%, 50%, 0.7);
       }
+      .right {
+        background: hsla(60, 100%, 50%, 0.7);
+      }
+      /* transform */
       .left {
         transform: rotateY(-90deg) translateZ(100px);
+      }
+      .right {
+        transform: rotateY(90deg) translateZ(100px);
       }
     </style>
   </head>
@@ -48,6 +55,7 @@
     <div class="container">
       <div class="cube">
         <div class="face left">Left</div>
+        <div class="face right">right</div>
       </div>
     </div>
   </body>
