@@ -15,21 +15,25 @@
         height: 200px;
         border: 1px solid #ccc;
         margin: 80px;
+        /* tta */
         perspective: 400px;
       }
       .cube {
         width: 200px;
         height: 200px;
+        position: relative;
+        /* tta */
         transform-style: preserve-3d;
         transform: translateZ(-100px);
-        position: relative;
       }
+      /* face lay-pos */
       .face {
         width: 200px;
         height: 200px;
         border: 2px solid black;
         position: absolute;
       }
+      /* face text */
       .face {
         line-height: 200px;
         font-size: 40px;
@@ -74,6 +78,18 @@
       }
       .back {
         transform: rotateY(180deg) translateZ(100px);
+      }
+      /* animation */
+      @keyframes spinCube {
+        0% {
+          transform: translateZ(-100px) rotateX(0deg) rotateY(0deg);
+        }
+        100% {
+          transform: translateZ(-100px) rotateX(360deg) rotateY(360deg);
+        }
+      }
+      body:hover .cube {
+        animation: spinCube 8s infinite ease-in-out;
       }
     </style>
   </head>
