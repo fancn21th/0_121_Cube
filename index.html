@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      .container {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+        margin: 80px;
+        perspective: 400px;
+      }
+      .cube {
+        width: 200px;
+        height: 200px;
+        transform-style: preserve-3d;
+        transform: translateZ(-100px);
+      }
+      .face {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+      }
+      .face {
+        line-height: 200px;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+      }
+      /* left */
+      .left {
+        background: hsla(180, 100%, 50%, 0.7);
+      }
+      .left {
+        transform: rotateY(-90deg) translateZ(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cube">
+        <div class="face left">Left</div>
+      </div>
+    </div>
+  </body>
+</html>
