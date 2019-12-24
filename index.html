@@ -22,6 +22,7 @@
         height: 200px;
         transform-style: preserve-3d;
         transform: translateZ(-100px);
+        position: relative;
       }
       .face {
         width: 200px;
@@ -49,6 +50,12 @@
       .bottom {
         background: hsla(300, 100%, 50%, 0.7);
       }
+      .front {
+        background: hsla(0, 100%, 50%, 0.7);
+      }
+      .back {
+        background: hsla(120, 100%, 50%, 0.7);
+      }
       /* transform */
       .left {
         transform: rotateY(-90deg) translateZ(100px);
@@ -62,6 +69,12 @@
       .bottom {
         transform: rotateX(-90deg) translateZ(100px);
       }
+      .front {
+        transform: rotateX(0deg) translateZ(100px);
+      }
+      .back {
+        transform: rotateY(180deg) translateZ(100px);
+      }
     </style>
   </head>
   <body>
@@ -71,6 +84,8 @@
         <div class="face bottom">Bottom</div>
         <div class="face left">Left</div>
         <div class="face right">Right</div>
+        <div class="face front">Front</div>
+        <div class="face back">Back</div>
       </div>
     </div>
   </body>
